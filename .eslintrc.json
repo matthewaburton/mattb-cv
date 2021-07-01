@@ -1,0 +1,157 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "airbnb-typescript",
+    // "airbnb/hooks",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "plugin:import/typescript",
+    "plugin:import/warnings",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "import",
+    "react",
+    "react-hooks",
+    "prettier",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    // no longer required with React 17
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    // typescript rules
+    "@typescript-eslint/member-delimiter-style": [
+      2,
+      {
+        "multiline": {
+          "delimiter": "none",
+          "requireLast": false
+        },
+        "singleline": {
+          "delimiter": "semi",
+          "requireLast": true
+        }
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      //https://github.com/typescript-eslint/typescript-eslint/blob/v4.8.2/packages/eslint-plugin/docs/rules/naming-convention.md
+      2,
+      {
+        "selector": "variableLike",
+        "format": [
+          "camelCase",
+          "PascalCase",
+          "UPPER_CASE"
+        ],
+        "filter": {
+          "regex": "^_set", // to allow for using React.useRef as 'state'
+          "match": false
+        }
+      },
+      {
+        "selector": "interface",
+        "format": [
+          "PascalCase"
+        ]
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": [
+      0
+    ],
+    "@typescript-eslint/no-use-before-define": [
+      0
+    ], // redundant
+    // react rules
+    "react-hooks/exhaustive-deps": [
+      2
+    ],
+    "react-hooks/rules-of-hooks": [
+      2
+    ],
+    "react/jsx-filename-extension": [
+      2,
+      {
+        "extensions": [
+          ".jsx",
+          ".tsx",
+          ".stories.js"
+        ]
+      }
+    ],
+    "react/jsx-props-no-spreading": [
+      0
+    ],
+    "react/jsx-wrap-multilines": [
+      2,
+      {
+        "prop": "ignore"
+      }
+    ],
+    "react/prop-types": [
+      0
+    ],
+    "react/require-default-props": [
+      0
+    ],
+    "react/display-name": [
+      0
+    ],
+    // js rules
+    "no-unused-vars": [
+      2,
+      {
+        "args": "after-used"
+      }
+    ],
+    "import/extensions": [
+      2,
+      "never"
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.ts",
+          "**/*.test.tsx",
+          "**/*.stories.js"
+        ]
+      }
+    ],
+    "import/no-cycle": [
+      2,
+      {
+        "maxDepth": 1
+      }
+    ]
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
+    },
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}

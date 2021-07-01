@@ -1,0 +1,299 @@
+entries:
+  - title: Enterprise Architect; Team Lead, Data Management
+    organization: Venerable
+    dateFrom: Apr 2022
+    dateTo: Present
+    points:
+      - >-
+        Served as Enterprise Architect and Data Management Team Lead for the company's Business
+        Application Services (BAS) division. BAS was responsible for the development, maintenance,
+        and operation of the software systems directly related to Venerable's core business
+        (i.e., fixed and variable annuities).
+      - >-
+        Developed operations-oriented data processing pipelines that provided internal business
+        users with data sets that were virtually inaccessible before. Information domains covered
+        Customer Interactions, Business Process Management (BPM) Workflows, and Block Product Policy
+        Snapshots (snapshots of annuity policies). Services were built according to the "Clean
+        Architecture", with well-defined separation between Entity, Use Case, Adapter, and
+        Framework/Config layers of the application stack.
+      - >-
+        Pioneered the use of AWS Cloud Development Kit (CDK) for building and deploying serverless
+        applications at Venerable. True microservices were built using AWS Lambda (Python),
+        EventBridge, SQS, and Aurora Postgres.
+      - >-
+        The team operated in a scrum-oriented Agile fashion, running 3-week sprints with a "buffer"
+        week for planning and maintenance. Technologies used include Python 3.9+, PostgreSQL 14
+        (AWS Aurora), SQL Server, Docker, AWS serverless technologies (Lambda, EventBridge, etc.),
+        and AWS CDK.
+
+  - title: Team Lead, "Task E" Special Projects
+    organization: Computer Aid, Inc. (CAI)
+    dateFrom: Jan 2020
+    dateTo: Apr 2022
+    points:
+      - >-
+        Served as a special project Team Lead for the Commonwealth of PA's Infrastructure and
+        Economic Development (IED) IT Delivery Center, a consolidated IT service center serving the
+        Pennsylvania Dept. of Transportation (PennDOT), the Pennsylvania Emergency Management Agency
+        (PEMA), and the Department of Community and Economic Development (DCED).
+      - >-
+        Tasked with leading a high-performance team of skilled software engineers and analysts
+        tasked with developing a comprehensive web-based portal for 9-1-1 call centers, known as
+        Public Safety Answering Points, or PSAPs (pronounced "pea-saps"). The portal provided PSAPs
+        with organization administration, operational planning, funding grant lifecycle management,
+        and financial reporting capabilities.
+      - >-
+        Established the highest standard of quality and excellence for software development within
+        the Delivery Center, with the PSAP Portal team's performance frequently being described as
+        "exemplary" by the IT Delivery Center's Bureau Directors and Section Chiefs. The PSAP Portal
+        application itself was consistently the highest-scoring application on the IT Delivery
+        Center's monthly DevSecOps Application Quality Report, which graded over 120 in-house
+        developed applications on code quality, maintainability, custom code and third-party library
+        security, and conformance to established standards.
+      - >-
+        The team ran in a true Agile style, running 3-week sprints with a "buffer" week for planning
+        and maintenance. Technologies used include .NET Core/.NET 6, Node.js, TypeScript, React,
+        Vue.js, SQL Server, and Docker.
+
+  - title: Director of Software Engineering
+    organization: Versatile Credit, Inc.
+    dateFrom: Oct 2018
+    dateTo: Jul 2019
+    points:
+      - >-
+        Led the Software Engineering team for Versatile Credit, a company that manufacturers,
+        deploys, and supports digital kiosk systems that facilitate the submission of electronic
+        credit applications for in-store consumer financing. The team included Software Developers,
+        UI/UX Designers, and Quality Assurance Technicians.
+      - >-
+        Directed and oversaw an effort to reduce version fragmentation across the company's 3,500+
+        digital kiosks, running over 100 distinct (outdated) software versions. The effort resulted
+        in an 83% reduction in distinct software versions in the field, achieving over 95% current
+        version compliance.
+      - >-
+        Established daily stand-ups (5 minute morning meetings) to ensure that all team members
+        started the day on the same page. Held weekly team sync-up meetings that were free of agenda
+        and open for general team discussion, "shout outs", "show and tell", etc.
+      - >-
+        Developed monthly "lunch and learn" sessions. A member of the team would present a topic to
+        the group and lead them in a period of instruction during a company-sponsored lunch. Topics
+        included "Intro to Docker for Developers", "Using AWS at Versatile Credit", and "JavaScript:
+        The Tricky Parts".
+      - >-
+        Instituted the practice of performing code reviews as part of all check-ins (Bitbucket Pull
+        Requests), continuous integration/delivery (Bamboo Build Plans), and push-button software
+        deployments (Bamboo Deployment Projects).
+      - >-
+        Versatile Credit customers included Ashley Furniture, La-Z-Boy, Lumber Liquidators, and
+        Wolf's Furniture.
+
+  - title: Software Architect (Consultant)
+    organization: ParkMyCloud
+    dateFrom: Feb 2018
+    dateTo: Oct 2018
+    points:
+      - >-
+        Provided expert guidance and software engineering consultation to ParkMyCloud, a growing
+        startup company that provides a SaaS application for automated cost control of cloud
+        computing resources for Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform
+        (GCP), and Alibaba Cloud.
+      - >-
+        Assisted the CEO, CTO, and Product Manager in laying out and prioritizing the company's
+        feature roadmap.
+      - >-
+        Instituted the practice of performing code reviews as part of all check-ins (GitHub Pull
+        Requests), unit testing, continuous integration (Travis CI), and code coverage monitoring
+        (Codecov.io).
+      - >-
+        Developed numerous enhancements to the company's SaaS product, including support for Azure
+        Scale Sets, support for automated management of suspended ASG processes for AWS Autoscaling
+        Groups, big data management (system metrics), and several enhancements related to database
+        read/write performance.
+      - >-
+        Back-end system were written primarily in Python and Go, using MySQL, AWS Aurora, and Redis
+        for data persistence and caching.
+      - >-
+        ParkMyCloud customers included CapitalOne, McDonald's, Sysco, Unilever, Toyota, Associated
+        Press, and National Geographic.
+
+  - title: Director of Engineering; Director of Operations (Interim)
+    organization: VS Networks, LLC
+    dateFrom: Nov 2013
+    dateTo: Jan 2018
+    points:
+      - >-
+        Led the Engineering team for VS Networks, a digital signage company that manufactures,
+        deploys, and supports passive (display) and interactive (touchscreen) in-store digital media
+        systems for retail establishments. The team included Software Engineers, Web Developers,
+        Network Administrators, UI/UX Designers, and Tech Support personnel.
+      - >-
+        Established the high standard by which VS Networks systems were designed, developed, tested,
+        and maintained in an environment consisting of 30+ back-end services written in Python, C++,
+        TypeScript, Go, and Kotlin, with data stores that included PostgreSQL, Redis, InfluxDB,
+        BoltDB, and HSQLDB.
+      - >-
+        Co-designed and co-developed the company's new media system application platform. The
+        platform enables app developers to create rich and engaging applications for VS Networks'
+        passive and interactive media systems using modern web technologies, and provides several
+        high-level services such as device identification and pairing, user activity reporting,
+        durable messaging, app-to-app navigation, and system control, all exposed via HTTP APIs
+        served by an on-device web server.
+      - >-
+        Developed numerous software packages for internal use, including: micro-ORMs for Python and
+        Go (golang); network communication libraries for Python, Go, Kotlin, and TypeScript;
+        run-time type-checking libraries for Python; and database schema migration utilities for
+        Python and Kotlin.
+      - >-
+        Served as Interim Director of Operations from Mar 2015 - Mar 2016.
+      - >-
+        VS Networks customers included John Deere, STIHL, Honda Power Equipment, Weber, and Ace
+        Hardware.
+
+  - title: Senior Software Engineer
+    organization: Avery Dennison Corporation
+    dateFrom: May 2012
+    dateTo: Nov 2013
+    points:
+      - >-
+        Provided experienced software development and knowledgeable technical guidance for the
+        company's Retail Branding and Information Solutions (RBIS) division.
+      - >-
+        Architected and developed Avery's Electronic Product Code (EPC) and serial number management
+        system, built using Java 1.7 and PostgreSQL, and communicating via Java Message Service
+        (JMS) and RESTful HTTP (using JSON and XML). The system generated and tracked globally
+        unique structured serial numbers that were written to RFID tags used by RBIS customers.
+      - >-
+        Developed a unified base for RBIS web applications by creating a cloneable template project,
+        initialized using a PowerShell script that customized the application's repository name,
+        Maven properties, database connection settings, and base Java package name; using
+        distributed source control allowed each application's maintainer to integrate
+        template-level changes at their discretion.
+      - >-
+        Developed ETL scripts (using Python) to parse CSV, TSV, XML, and custom text-based data
+        input files from clothing manufacturers from around the world. While there were similarities
+        between some ETL routines, no two data input formats were the same (even between file types
+        from the same manufacturer), requiring most Python ETL scripts to be ~85% unique code.
+      - >-
+        Instituted the use of continuous integration (Jenkins), distributed source control (Git),
+        source code documentation (JavaDoc, NaturalDocs), and build artifact management
+        (Artifactory).
+      - >-
+        RBIS serviced some of the world's largest retail apparel companies, including Abercrombie
+        &amp; Fitch, Adidas, Gap, JC Penny, Levi, Nike, and Puma.
+
+  - title: Senior Software Engineer
+    organization: Aterrasys, LLC
+    dateFrom: Oct 2010
+    dateTo: May 2012
+    points:
+      - >-
+        Supported TransApps, a DARPA project developing military-relevant applications for use in
+        combat environments, as a key member of the core software engineering team.
+      - >-
+        Developed Command and Control (C2), situational awareness, and real-time communication
+        Web-based applications using Java with Spring and Hibernate, and ASP.NET; many systems were
+        "companion" applications to TransApps Android apps.
+      - >-
+        Developed the software component of a low-cost 360-degree street view recording system built
+        from commercially-available commodity hardware; the system was designed to provide
+        individual units with Google Street View-like visibility and awareness, while costing only
+        $17,500, compared to the $100,000 functional reference system.
+      - >-
+        Established a series of tactical radio networks consisting of small-scale "pico cell" GSM
+        cellular networks, long-haul microwave antennas, and experimental MIMO radios to support
+        over thirty Android mobile devices and their supporting application servers during a
+        TransApps/U.S. Army field integration exercise in Yakima, WA.
+      - >-
+        Deployed to Afghanistan as part of the initial TransApps fielding team; provided training
+        and support to military personnel, traveled to various military installations to provide
+        application support, and assisted in establishing a base of operations for future field
+        service support personnel.
+
+  - title: Software Architect
+    organization: GeoDecisions
+    dateFrom: Apr 2008
+    dateTo: Oct 2010
+    points:
+      - >-
+        Developed purpose-built desktop and Web-based geospatial software solutions using Java and
+        .NET (C#, VB), built on top of the ESRI product line.
+      - >-
+        Worked closely with Project Managers and Technical Directors to draft software
+        specifications and project execution plans for commercial and non-profit projects.
+      - >-
+        Conducted in-house training sessions for junior developers and interns; subjects included
+        Advanced Object Oriented Programming, Test Driven Development, and Application Architecture
+        and Design.
+      - >-
+        GeoDecisions' commercial customers included Campbell's Soup Company, ConAgra Foods,
+        Smithfield Foods, and Waste Management.
+
+  - title: Software Engineer
+    organization: MapQuest, Inc.
+    dateFrom: Aug 2007
+    dateTo: Apr 2008
+    points:
+      - >-
+        Part of a four person team that developed, maintained, and continually enhanced the
+        mapping-related portions of MapQuest's custom mapping software (dubbed "MapWare").
+      - >-
+        Co-developed the MapQuest Current Traffic service; core services using Java 1.5 with Apache
+        Tomcat, back-end and infrastructure management using Python 2.5.1, testing using JUnit and
+        FitNesse, "one-click" deployments using Bash and Ant.
+      - >-
+        Created automated Quality Assurance tools used to analyze tiled map image composition and
+        quality using Python and the Python Imaging Library (PIL).
+      - >-
+        Developed automated regression testing suites for MapWare, MapQuest's proprietary mapping
+        engine (written in C++), using Java and FitNesse.
+
+  - title: Asst. Information Management Officer; Software Developer
+    organization: Applied Marine Technology, Inc. (AMTI)
+    dateFrom: Aug 2006
+    dateTo: Apr 2007
+    points:
+      - >-
+        Served as assistant to the 2nd Marine Aircraft Wing (2nd MAW) Information Management Officer
+        (IMO). The office of the IMO was responsible for increasing the effectiveness of commanders'
+        decision-making cycles by optimizing the exchange of information between and within airwing
+        units.
+      - >-
+        Co-developed the Air Tasking Order (ATO) Execution System (dubbed "AES"), the primary flight
+        tracking and manifesting system used by 2nd MAW in Iraq. To optimize for intermittent,
+        bandwidth-limited tactical networks, flight data was downloaded as XML on initial page load
+        and then displayed in a variety of formats using client-side XSL transforms (XSLT), with
+        updates performed in the background via AJAX calls.
+      - >-
+        Oversaw the development and ongoing maintenance of the 2nd Marine Aircraft Wing (2nd MAW)
+        intranet and three 2nd MAW Websites/Information Portals, supporting a client base of over
+        22,000 users.
+      - >-
+        Coordinated the use of MAW-wide use of Blue Force Tracker GPS tracking devices, which
+        augmented radar-based asset location, and allowed squadron commanders to track all of their
+        air and ground assets in real time via multiple supported Web-based and desktop
+        applications.
+      - >-
+        Served as Site Lead for the company's operations at MCAS Cherry Point.
+
+  - title: U.S. Marine (Active Duty)
+    organization: United States Marine Corps (USMC)
+    dateFrom: Aug 2002
+    dateTo: Aug 2006
+    points:
+      - >-
+        Trained as a Tactical Network System Specialist. Completed 3 tours of duty in Iraq in
+        support of Operation Iraqi Freedom.
+      - >-
+        Served as part of the initial fielding team for the Unit Operations Center (UOC) in Iraq, a
+        USMC program (developed by General Dynamics C4S) that provided Command and Control (C2)
+        capabilities to operational forces using rapidly deployable capability sets which scale to
+        meet the C2 needs of units of any size.
+      - >-
+        Was awarded the Navy/Marine Corps Achievement Medal for exemplary performance and leadership
+        in support of Operation Vigilant Resolve ("First Battle of Fallujah").
+      - >-
+        Was awarded the Navy/Marine Corps Achievement Medal for exceptional performance and
+        dedication to duty in support of Operation Steel Curtain.
+      - >-
+        Held an active security clearance (SECRET) from 2002 - 2012 (now expired). Received an
+        Honorable Discharge in August 2006.

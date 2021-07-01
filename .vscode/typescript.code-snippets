@@ -1,0 +1,17 @@
+{
+    "React Function Component": {
+        "prefix": [
+            "rfc"
+        ],
+        "body": [
+            "import React from \"react\"\n",
+            "interface $1Props {}\n",
+            "const $1 = ({}: $1Props): React.ReactElement => {",
+            "  return (",
+            "    $0",
+            "  )",
+            "}\n",
+            "export default $1\n"
+        ]
+    }
+}

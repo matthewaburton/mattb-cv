@@ -1,0 +1,67 @@
+categories:
+  - title: Lead
+    icon: user-friends
+    skills:
+      - Team Building
+      - Technical Mentoring
+      - Conflict Resolution
+      - Project Coordination
+      - Team Member Evals
+      - SDLC Management
+      - Agile Sprint Planning
+      - Continuous Improvement
+
+  - title: Code
+    icon: code-branch
+    skills:
+      - Java, Kotlin
+      - Python, Lua, PHP
+      - Go (golang
+      - C#, Visual Basic
+      - TypeScript, JavaScript
+      - Bash, PowerShell
+
+  - title: Data
+    icon: database
+    skills:
+      - PostgreSQL (Postgres)
+      - Redshift
+      - SQL Server, MySQL
+      - SQLite
+      - Redis, InfluxDB
+      - MongoDB
+
+  - title: Test
+    icon: vial
+    skills:
+      - JUnit, Spek (Kotlin)
+      - unittest (Python), pytest
+      - Jasmine, Jest
+      - MSTest, xUnit, NUnit
+      - TDD/BDD
+
+  - title: Web
+    icon: code
+    skills:
+      - HTML 5, CSS 3, SAAS
+      - React, Vue.js
+      - Spring, ASP.NET
+      - Express.js
+      - Nginx, Apache, IIS
+      - Django, Flask
+
+  - title: Cloud
+    icon: cloud
+    skills:
+      - AWS
+      - Azure
+      - GCP
+
+  - title: Tools
+    icon: tools
+    skills:
+      - Maven, Gradle, Ant
+      - MSBuild, GNU Make
+      - Jenkins, TeamCity
+      - CircleCI, Bamboo
+      - Webpack, Parcel, Gulp
