@@ -10,6 +10,7 @@ const StyledDiv = styled.div`
 
 type EntryProps = React.ComponentProps<typeof EntryHeader> & {
   points?: string[]
+  directives?: string[]
 }
 
 const Points = ({ points }: Pick<EntryProps, "points">): React.ReactElement => (
@@ -26,9 +27,15 @@ const Entry = ({
   dateFrom,
   dateTo,
   points,
+  directives,
 }: EntryProps): React.ReactElement => {
+  const classes = ["work-entry"]
+  if (directives?.includes("break-inside-avoid")) {
+    classes.push("break-inside-avoid")
+  }
+
   return (
-    <StyledDiv>
+    <StyledDiv className={`${classes.join(" ")}`}>
       <EntryHeader {...{ title, organization, dateFrom, dateTo }} />
       <Points points={points} />
     </StyledDiv>

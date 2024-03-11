@@ -1,38 +1,32 @@
 entries:
-  - title: Enterprise Architect; Team Lead, Data Management
-    organization: Venerable
+  - title: Enterprise Architect; Manager, Data Solutions
+    organization: Venerable Insurance & Annuity Company
     dateFrom: Apr 2022
     dateTo: Present
     points:
       - >-
-        Served as Enterprise Architect and Data Management Team Lead for the company's Business
-        Application Services (BAS) division. BAS was responsible for the development, maintenance,
-        and operation of the software systems directly related to Venerable's core business
-        (i.e., fixed and variable annuities).
+        Served as one of three company-wide Enterprise Architects, as well as the Manager of the
+        Data Solutions team for the company's Business Application Services (BAS) division. BAS was
+        responsible for the development, maintenance, and operation of the software systems directly
+        related to Venerable's core business (fixed and variable annuities).
       - >-
-        Developed operations-oriented data processing pipelines that provided internal business
-        users with data sets that were virtually inaccessible before. Information domains covered
-        Customer Interactions, Business Process Management (BPM) Workflows, and Block Product Policy
-        Snapshots (snapshots of annuity policies). Services were built according to the "Clean
-        Architecture", with well-defined separation between Entity, Use Case, Adapter, and
-        Framework/Config layers of the application stack.
+        Oversaw the development of operations-oriented data processing pipelines that provided
+        internal business users with data sets that were virtually inaccessible before. Information
+        domains included Customer Interactions, Business Process Management (BPM) Workflows, and
+        Block Product Policy Snapshots (napshots of annuity policies). Services were built according
+        to the "Clean Architecture", with well-defined separation between Entity, Use Case, Adapter,
+        and Framework/Config layers of the application stack.
       - >-
-        Pioneered the use of AWS Cloud Development Kit (CDK) for building and deploying serverless
-        applications at Venerable. True microservices were built using AWS Lambda (Python),
-        EventBridge, SQS, and Aurora Postgres.
-      - >-
-        The team operated in a scrum-oriented Agile fashion, running 3-week sprints with a "buffer"
-        week for planning and maintenance. Technologies used include Python 3.9+, PostgreSQL 14
-        (AWS Aurora), SQL Server, Docker, AWS serverless technologies (Lambda, EventBridge, etc.),
-        and AWS CDK.
+        Technologies used included Python 3.11, PostgreSQL 16 (AWS Aurora), SQL Server, Docker, and
+        AWS serverless technologies (Lambda, EventBridge, SQS, etc.).
 
-  - title: Team Lead, "Task E" Special Projects
+  - title: Special Projects Team Lead
     organization: Computer Aid, Inc. (CAI)
     dateFrom: Jan 2020
     dateTo: Apr 2022
     points:
       - >-
-        Served as a special project Team Lead for the Commonwealth of PA's Infrastructure and
+        Served as a Special Projects Team Lead for the Commonwealth of PA's Infrastructure and
         Economic Development (IED) IT Delivery Center, a consolidated IT service center serving the
         Pennsylvania Dept. of Transportation (PennDOT), the Pennsylvania Emergency Management Agency
         (PEMA), and the Department of Community and Economic Development (DCED).
@@ -54,6 +48,8 @@ entries:
         The team ran in a true Agile style, running 3-week sprints with a "buffer" week for planning
         and maintenance. Technologies used include .NET Core/.NET 6, Node.js, TypeScript, React,
         Vue.js, SQL Server, and Docker.
+    directives:
+      - break-inside-avoid
 
   - title: Director of Software Engineering
     organization: Versatile Credit, Inc.
@@ -107,7 +103,7 @@ entries:
       - >-
         Developed numerous enhancements to the company's SaaS product, including support for Azure
         Scale Sets, support for automated management of suspended ASG processes for AWS Autoscaling
-        Groups, big data management (system metrics), and several enhancements related to database
+        Groups, big Data Solutions (system metrics), and several enhancements related to database
         read/write performance.
       - >-
         Back-end system were written primarily in Python and Go, using MySQL, AWS Aurora, and Redis
@@ -295,5 +291,5 @@ entries:
         Was awarded the Navy/Marine Corps Achievement Medal for exceptional performance and
         dedication to duty in support of Operation Steel Curtain.
       - >-
-        Held an active security clearance (SECRET) from 2002 - 2012 (now expired). Received an
-        Honorable Discharge in August 2006.
+        Held an active security clearance (SECRET) from 2002 - 2012. Received an Honorable Discharge
+        in August 2006. Final rank held: Sergeant (E-5).
