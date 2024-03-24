@@ -1,7 +1,6 @@
-import "./RootRoute.css"
-
 import { useEffect } from "react"
 import { Link, NavigationType, useNavigationType } from "react-router-dom"
+import "./RootRoute.css"
 
 /**
  * The <Previewer> component from paged.js breaks something in React Router in

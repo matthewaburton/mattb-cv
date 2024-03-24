@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import Resume from "Resume"
+import Resume from "components/resume/Resume"
 
 const ResumeRoute = (): React.ReactElement => {
   useEffect(() => {

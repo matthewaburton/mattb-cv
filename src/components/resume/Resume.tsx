@@ -1,11 +1,11 @@
 import React, { useLayoutEffect, useState } from "react"
 import { Previewer } from "pagedjs"
-import { ResumeData, fetchResumeData } from "./data"
 import ExperienceSection from "components/experience/ExperienceSection"
+import FooterSection from "components/footer/FooterSection"
 import HeaderSection from "components/header/HeaderSection"
 import SkillsSection from "components/skills/SkillsSection"
 import SummarySection from "components/summary/SummarySection"
-import FooterSection from "components/footer/FooterSection"
+import { fetchResumeData, ResumeData } from "data"
 
 const Resume = (): React.ReactElement => {
   const [data, setData] = useState<ResumeData>()

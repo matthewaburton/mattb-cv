@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import { StyledUl } from "components/common"
-import * as hash from "util/hash"
 import EntryHeader from "./EntryHeader"
+import * as hash from "util/hash"
 
 const StyledDiv = styled.div`
   padding-bottom: 1rem;
@@ -10,7 +10,7 @@ const StyledDiv = styled.div`
 
 type EntryProps = React.ComponentProps<typeof EntryHeader> & {
   points?: string[]
-  directives?: string[]
+  classes?: string[]
 }
 
 const Points = ({ points }: Pick<EntryProps, "points">): React.ReactElement => (
@@ -27,15 +27,15 @@ const Entry = ({
   dateFrom,
   dateTo,
   points,
-  directives,
+  classes,
 }: EntryProps): React.ReactElement => {
-  const classes = ["work-entry"]
-  if (directives?.includes("break-inside-avoid")) {
-    classes.push("break-inside-avoid")
+  const cc = ["work-entry"]
+  if (classes?.includes("break-inside-avoid")) {
+    cc.push("break-inside-avoid")
   }
 
   return (
-    <StyledDiv className={`${classes.join(" ")}`}>
+    <StyledDiv className={`${cc.join(" ")}`}>
       <EntryHeader {...{ title, organization, dateFrom, dateTo }} />
       <Points points={points} />
     </StyledDiv>

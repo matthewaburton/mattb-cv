@@ -13,7 +13,7 @@ entries:
         Oversaw the development of operations-oriented data processing pipelines that provided
         internal business users with data sets that were virtually inaccessible before. Information
         domains included Customer Interactions, Business Process Management (BPM) Workflows, and
-        Block Product Policy Snapshots (napshots of annuity policies). Services were built according
+        Block Product Policy Snapshots (snapshots of annuity policies). Services were built according
         to the "Clean Architecture", with well-defined separation between Entity, Use Case, Adapter,
         and Framework/Config layers of the application stack.
       - >-
@@ -48,7 +48,7 @@ entries:
         The team ran in a true Agile style, running 3-week sprints with a "buffer" week for planning
         and maintenance. Technologies used include .NET Core/.NET 6, Node.js, TypeScript, React,
         Vue.js, SQL Server, and Docker.
-    directives:
+    classes:
       - break-inside-avoid
 
   - title: Director of Software Engineering
