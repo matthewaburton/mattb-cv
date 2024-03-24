@@ -13,7 +13,6 @@ const Resume = (): React.ReactElement => {
   async function doFetch() {
     const d = await fetchResumeData()
     setData(d)
-    console.info("d", d)
   }
 
   async function doPreview() {

@@ -1,0 +1,32 @@
+.cards {
+  display: grid;
+  flex-wrap: wrap;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+  justify-items: center;
+  margin: 0;
+  padding: 5rem 0;
+  place-content: center;
+}
+
+.cards a {
+  text-decoration: none;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  color: #384347;
+  font-size: 1.5rem;
+  height: 15rem;
+  line-height: 15rem;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+  width: 20rem;
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}

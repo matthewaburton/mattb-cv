@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import styled from "styled-components"
 import ContactName from "components/contact/ContactName"
 import ContactDetails from "components/contact/details/ContactDetails"
@@ -41,17 +41,11 @@ interface HeaderProps {
   }
 }
 
-const HeaderSection = ({ contact }: HeaderProps): React.ReactElement => {
-  useEffect(() => {
-    console.info("<contact>", contact)
-  }, [contact])
-
-  return (
-    <StyledHeader>
-      <StyledContactName>{contact.name}</StyledContactName>
-      <StyledContactDetails {...contact.details} />
-    </StyledHeader>
-  )
-}
+const HeaderSection = ({ contact }: HeaderProps): React.ReactElement => (
+  <StyledHeader>
+    <StyledContactName>{contact.name}</StyledContactName>
+    <StyledContactDetails {...contact.details} />
+  </StyledHeader>
+)
 
 export default HeaderSection
