@@ -36,9 +36,9 @@ interface EntryHeaderProps {
 }
 
 const fmtTitle = (title: string) => {
-  const parts = title.split(";")
+  const parts = title.split("+")
   return parts
-    .map((p, i) => [p, i < parts.length - 1 ? [";", <br key={`{p}-{i}`} />] : null])
+    .map((p, i) => [p, i < parts.length - 1 ? ["+", <br key={`{p}-{i}`} />] : null])
     .flat()
 }
 

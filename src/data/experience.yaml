@@ -1,5 +1,5 @@
 entries:
-  - title: Enterprise Architect; Manager, Data Solutions
+  - title: Enterprise Architect + Manager, Data Solutions
     organization: Venerable Insurance & Annuity Company
     dateFrom: Apr 2022
     dateTo: Present
@@ -112,7 +112,7 @@ entries:
         ParkMyCloud customers included CapitalOne, McDonald's, Sysco, Unilever, Toyota, Associated
         Press, and National Geographic.
 
-  - title: Director of Engineering; Director of Operations (Interim)
+  - title: Director of Engineering + Director of Operations (Interim)
     organization: VS Networks, LLC
     dateFrom: Nov 2013
     dateTo: Jan 2018
@@ -224,7 +224,7 @@ entries:
         GeoDecisions' commercial customers included Campbell's Soup Company, ConAgra Foods,
         Smithfield Foods, and Waste Management.
 
-  - title: Software Engineer
+  - title: Software Engineer (Contract)
     organization: MapQuest, Inc.
     dateFrom: Aug 2007
     dateTo: Apr 2008
@@ -243,7 +243,7 @@ entries:
         Developed automated regression testing suites for MapWare, MapQuest's proprietary mapping
         engine (written in C++), using Java and FitNesse.
 
-  - title: Asst. Information Management Officer; Software Developer
+  - title: Asst. Information Management Officer + Software Developer
     organization: Applied Marine Technology, Inc. (AMTI)
     dateFrom: Aug 2006
     dateTo: Apr 2007
