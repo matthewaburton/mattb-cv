@@ -1,0 +1,52 @@
+main:
+  - >-
+    Hello.
+  - >-
+    My name is Matt, and I like to build awesome things.
+  - >-
+    Over the past twenty years, I have been a core member of a DARPA research
+    and development group, an active duty U.S. Marine data communications chief,
+    an operations and engineering director, and a key part of software engineering
+    teams for companies such as MapQuest, Avery Dennison, SAIC, and others. I am
+    happiest when I am solving difficult problems with excited and motivated people.
+    My perfect environment is in a space where learning, experimentation, and
+    pushing the envelope are core tenets, with folks who are excited about trying
+    new approaches to overcoming challenges.
+  - >-
+    In the past, I have developed software systems, large and small, in a multitude
+    of languages and environments, and for a variety of platforms. I have helped
+    design, build, and administer tactical IP networks that supported a wide variety
+    of military units, some as small as 50-man units with extremely limited resources,
+    with others as large as the entire 2nd Marine Air Wing in western Iraq's Al Anbar
+    province. I have worked with developers, designers, and project managers to help
+    realize a product owner's vision by defining short- and long-term development
+    road maps, and by ensuring accountability of all project parties. I have led
+    teams of talented software engineers, designers, and testers in fast-paced and
+    dynamic environments where quality, correctness, and attention to detail were
+    among the highest priorities.
+  - >-
+    I am a geek and a hacker, but more than anything I am a guy who loves solving
+    problems by building really cool things with really cool people. I would greatly
+    enjoy and appreciate the opportunity to speak with you about your business and
+    how we might build awesome things together. Thank you very much for your time
+    and consideration; I hope to hear from you soon.
+regards: All the best
+signed: Matt
+factoids:
+  - title: Favorite Data Structure
+    value: Radix Tree (but CRDTs are a close second!)
+  - title: Favorite Map Projection
+    value: Robinson (it provides a practical balance between accuracy and aesthetic appeal)
+  - title: Favorite Thing to Geek Out About
+    value: Type Systems
+  - title: vi or Emacs
+    value: vi, 100%
+  - title: Geekiest Thing I've Ever Done
+    value: Hard to say, but building this cover letter and resume in React/TypeScript is up there.
+  - title: Nifty Tech Tidbit
+    value: >-
+      A coworker and I once built a network of private picocell GSM cellular systems,
+      microwave antennas, servers-on-laptops, experimental MIMO radios, and reused
+      CAT-5 cables to support 30+ DARPA-issued Android devices running combat-relevant
+      applications for a military exercise. We did this out of the back of a rental
+      car on top of a mountain in Yakima, Washington. It was positively fantastic.

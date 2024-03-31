@@ -1,4 +1,5 @@
 import yaml from "yaml"
+import coverYamlUrl from "./cover.yaml"
 import contactYamlUrl from "./contact.yaml"
 import experienceYamlUrl from "./experience.yaml"
 import skillsYamlUrl from "./skills.yaml"
@@ -6,6 +7,18 @@ import summaryYamlUrl from "./summary.yaml"
 
 function readYamlFile(url: string): any {
   return fetch(url).then(async r => yaml.parse(await r.text()))
+}
+
+export interface Factoid {
+  title: string
+  value: string
+}
+
+export interface CoverLetterData {
+  main: string[]
+  regards: string
+  signed: string
+  factoids: Factoid[]
 }
 
 export interface ResumeContactData {
@@ -21,7 +34,7 @@ export interface ResumeSummaryData {
   points?: string[]
 }
 
-export interface ResumeSkilsData {
+export interface ResumeSkillsData {
   categories: [
     {
       title: string
@@ -43,19 +56,22 @@ export interface ResumeExperienceData {
 }
 
 export interface ResumeData {
+  cover: CoverLetterData
   contact: ResumeContactData
   summary: ResumeSummaryData
-  skills: ResumeSkilsData
+  skills: ResumeSkillsData
   experience: ResumeExperienceData
 }
 
 export async function fetchResumeData(): Promise<ResumeData> {
+  const cover = readYamlFile(coverYamlUrl)
   const contact = readYamlFile(contactYamlUrl)
   const summary = readYamlFile(summaryYamlUrl)
   const skills = readYamlFile(skillsYamlUrl)
   const experience = readYamlFile(experienceYamlUrl)
 
   return {
+    cover: await cover,
     contact: await contact,
     summary: await summary,
     skills: await skills,

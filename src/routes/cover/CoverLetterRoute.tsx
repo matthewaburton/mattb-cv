@@ -1,5 +1,7 @@
+import CoverLetter from "components/cover/CoverLetter"
+
 const CoverLetterRoute = (): React.ReactElement => {
-  return <div>Cover Letter Route</div>
+  return <CoverLetter />
 }
 
 export default CoverLetterRoute
