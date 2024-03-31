@@ -21,7 +21,7 @@ const LinkTable = styled.table`
   }
 `
 
-interface LinkSectionProps {
+interface LinksSectionProps {
   links: Link[]
 }
 
@@ -33,7 +33,7 @@ const iconClasses = (names: string) =>
     .join(" ")
     .trim()
 
-const LinkSection = ({ links }: LinkSectionProps) => (
+const LinksSection = ({ links }: LinksSectionProps) => (
   <div>
     <SectionTitle title="Links" />
 
@@ -57,4 +57,4 @@ const LinkSection = ({ links }: LinkSectionProps) => (
   </div>
 )
 
-export default LinkSection
+export default LinksSection
