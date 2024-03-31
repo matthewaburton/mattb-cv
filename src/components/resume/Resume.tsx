@@ -6,6 +6,7 @@ import SkillsSection from "components/skills/SkillsSection"
 import SummarySection from "components/summary/SummarySection"
 import { ResumeData } from "data"
 import Loader from "components/loader/Loader"
+import LinkSection from "components/links/LinksSection"
 
 type ResumeContentProps = {
   data: ResumeData
@@ -19,6 +20,7 @@ const ResumeContent = ({ data }: ResumeContentProps): React.ReactElement => {
         <SummarySection points={data.summary.points} />
         <SkillsSection categories={data.skills.categories} />
         <ExperienceSection entries={data.experience.entries} />
+        <LinkSection links={data.links} />
       </main>
       <FooterSection />
     </>

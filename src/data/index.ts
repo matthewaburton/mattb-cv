@@ -1,7 +1,8 @@
 import yaml from "yaml"
-import coverYamlUrl from "./cover.yaml"
 import contactYamlUrl from "./contact.yaml"
+import coverYamlUrl from "./cover.yaml"
 import experienceYamlUrl from "./experience.yaml"
+import linksYamlUrl from "./links.yaml"
 import skillsYamlUrl from "./skills.yaml"
 import summaryYamlUrl from "./summary.yaml"
 
@@ -55,12 +56,20 @@ export interface ResumeExperienceData {
   ]
 }
 
+export interface Link {
+  title: string
+  url: string
+}
+
+export type ResumeLinkData = Array<Link>
+
 export interface ResumeData {
   cover: CoverLetterData
   contact: ResumeContactData
   summary: ResumeSummaryData
   skills: ResumeSkillsData
   experience: ResumeExperienceData
+  links: ResumeLinkData
 }
 
 export async function fetchResumeData(): Promise<ResumeData> {
@@ -69,6 +78,7 @@ export async function fetchResumeData(): Promise<ResumeData> {
   const summary = readYamlFile(summaryYamlUrl)
   const skills = readYamlFile(skillsYamlUrl)
   const experience = readYamlFile(experienceYamlUrl)
+  const links = readYamlFile(linksYamlUrl)
 
   return {
     cover: await cover,
@@ -76,5 +86,6 @@ export async function fetchResumeData(): Promise<ResumeData> {
     summary: await summary,
     skills: await skills,
     experience: await experience,
+    links: await links,
   }
 }
