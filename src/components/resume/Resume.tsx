@@ -2,11 +2,11 @@ import React from "react"
 import ExperienceSection from "components/experience/ExperienceSection"
 import FooterSection from "components/footer/FooterSection"
 import HeaderSection from "components/header/HeaderSection"
+import LinkSection from "components/links/LinksSection"
+import Loader from "components/loader/Loader"
 import SkillsSection from "components/skills/SkillsSection"
 import SummarySection from "components/summary/SummarySection"
 import { ResumeData } from "data"
-import Loader from "components/loader/Loader"
-import LinkSection from "components/links/LinksSection"
 
 type ResumeContentProps = {
   data: ResumeData
