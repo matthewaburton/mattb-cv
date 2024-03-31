@@ -35,8 +35,6 @@ body {
 /* FontAwesome styles */
 .fas {
   color: #4a90e2;
-  font-size: 75%;
   padding-right: 0.4rem;
   position: relative;
-  top: -1px;
 }

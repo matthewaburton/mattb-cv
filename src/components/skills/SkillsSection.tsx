@@ -25,8 +25,10 @@ const SkillCategory = styled.section`
 
     .fas {
       display: inline-block;
+      font-size: 75%;
       padding: 0;
       text-align: center;
+      top: -1px;
       width: 1.5rem;
     }
 

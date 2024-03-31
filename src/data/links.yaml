@@ -1,8 +1,12 @@
 - title: LinkedIn Profile
   url: "https://www.linkedin.com/in/matthewaburton/"
-- title: "GitHub Profile"
+  icon: brands linkedin
+- title: GitHub Profile
   url: "https://github.com/matthewaburton"
-- title: "Go (golang) Repositories [GitHub]"
+  icon: brands github
+- title: Go (golang) Repositories
   url: "https://github.com/mab-go"
+  icon: brands golang
 - title: Matt's Resume Source Code (React/TypeScript)
   url: "https://github.com/matthewaburton/mattb-cv"
+  icon: code

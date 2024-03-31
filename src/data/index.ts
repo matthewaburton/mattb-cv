@@ -59,6 +59,7 @@ export interface ResumeExperienceData {
 export interface Link {
   title: string
   url: string
+  icon: string
 }
 
 export type ResumeLinkData = Array<Link>

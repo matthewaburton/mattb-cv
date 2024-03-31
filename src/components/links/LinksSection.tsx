@@ -9,6 +9,10 @@ const LinkTable = styled.table`
   }
 
   tr td:first-child {
+    text-align: center;
+  }
+
+  tr td:nth-child(2) {
     padding-right: 2rem;
   }
 
@@ -21,23 +25,34 @@ interface LinkSectionProps {
   links: Link[]
 }
 
-const key = (l: Link) => hash.xxh32(`${l.title}|${l.url}`)
+const key = (link: Link) => hash.xxh32(`${link.title}|${link.url}`)
+const iconClasses = (names: string) =>
+  names
+    .split(" ")
+    .map(name => `fa-${name}`)
+    .join(" ")
+    .trim()
 
 const LinkSection = ({ links }: LinkSectionProps) => (
   <div>
     <SectionTitle title="Links" />
 
     <LinkTable>
-      {links.map(l => (
-        <tr key={key(l)}>
-          <td>{l.title}</td>
-          <td>
-            <a href={l.url} target="_blank" rel="noopener noreferrer">
-              {l.url}
-            </a>
-          </td>
-        </tr>
-      ))}
+      <tbody>
+        {links.map(link => (
+          <tr key={key(link)}>
+            <td>
+              <span className={`fas ${iconClasses(link.icon)}`}></span>
+            </td>
+            <td>{link.title}</td>
+            <td>
+              <a href={link.url} target="_blank" rel="noopener noreferrer">
+                {link.url}
+              </a>
+            </td>
+          </tr>
+        ))}
+      </tbody>
     </LinkTable>
   </div>
 )
