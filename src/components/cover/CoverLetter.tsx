@@ -1,9 +1,9 @@
-import React, { useLayoutEffect, useState } from "react"
-import { Previewer } from "pagedjs"
+import React from "react"
 import FooterSection from "components/footer/FooterSection"
 import HeaderSection from "components/header/HeaderSection"
+import Loader from "components/loader/Loader"
 import SectionTitle from "components/common/SectionTitle"
-import { Factoid, fetchResumeData, ResumeData } from "data"
+import { Factoid, ResumeData } from "data"
 import * as hash from "util/hash"
 
 type CoverLetterContentProps = {
@@ -19,6 +19,7 @@ const CoverLetterContent = ({ data }: CoverLetterContentProps): React.ReactEleme
       <HeaderSection contact={data.contact} />
       <main>
         <SectionTitle title="About Me" />
+
         {data.cover?.main.map((p: string, i: number) => (
           <p key={paraKey(p, i)}>{p}</p>
         ))}
@@ -29,6 +30,7 @@ const CoverLetterContent = ({ data }: CoverLetterContentProps): React.ReactEleme
         </p>
 
         <SectionTitle title="Interesting Factoids" />
+
         {data.cover?.factoids.map((f: Factoid) => (
           <p key={factKey(f)}>
             <strong>{f.title}:</strong> {f.value}
@@ -40,50 +42,6 @@ const CoverLetterContent = ({ data }: CoverLetterContentProps): React.ReactEleme
   )
 }
 
-const CoverLetter = (): React.ReactElement => {
-  const [loaded, setLoaded] = useState<boolean>(false)
-  const [data, setData] = useState<ResumeData>()
-
-  /**
-   * Executes the `fetchResumeData` function.
-   */
-  async function doFetch() {
-    const d = await fetchResumeData()
-    console.debug("data", d)
-    setData(d)
-  }
-
-  /**
-   * Invokes the Page.js in-browser previewer.
-   */
-  async function doPreview() {
-    await new Previewer().preview()
-  }
-
-  // Fetch resume data on component load
-  useLayoutEffect(() => {
-    doFetch()
-  }, [])
-
-  // Paged.js appears to need a brief moment for the DOM content to fully load
-  // (a separate issue from network load time). 0.5 sec appears to be sufficient
-  // based on testing/observation.
-  useLayoutEffect(() => {
-    if (data) setTimeout(() => setLoaded(true), 500)
-  }, [data])
-
-  // Invoke `doPreview` if the data has been loaded
-  useLayoutEffect(() => {
-    if (data && loaded) doPreview()
-  }, [data, loaded])
-
-  // Render the resume content if the data has been loaded
-  if (data && loaded) {
-    return <CoverLetterContent data={data} />
-  }
-
-  // Render a fallback component if the data is still loading
-  return <span>Fallback</span>
-}
+const CoverLetter = (): React.ReactElement => <Loader component={CoverLetterContent} />
 
 export default CoverLetter
