@@ -27,6 +27,6 @@ const ResumeContent = ({ data }: ResumeContentProps): React.ReactElement => {
   )
 }
 
-const Resume = (): React.ReactElement => <Loader component={ResumeContent} />
+const Resume = (): React.ReactElement => <Loader paged component={ResumeContent} />
 
 export default Resume

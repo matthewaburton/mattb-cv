@@ -1,6 +1,6 @@
 import { useEffect } from "react"
-import { Link, NavigationType, useNavigationType } from "react-router-dom"
-import "./RootRoute.css"
+import { NavigationType, useNavigationType } from "react-router-dom"
+import Home from "components/home/Home"
 
 /**
  * The <Previewer> component from paged.js breaks something in React Router in
@@ -31,19 +31,7 @@ const RootRoute = (): React.ReactElement => {
   const navigationType = useNavigationType()
   useRefreshIfNeeded(navigationType)
 
-  return (
-    <main>
-      <div className="cards">
-        <Link to="cover">
-          <div className="card">Cover Letter</div>
-        </Link>
-
-        <Link to="resume">
-          <div className="card">Resume</div>
-        </Link>
-      </div>
-    </main>
-  )
+  return <Home />
 }
 
 export default RootRoute

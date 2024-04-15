@@ -9,9 +9,10 @@ type ComponentProps = {
 
 interface LoaderProps {
   component: ({ data }: ComponentProps) => React.ReactElement
+  paged?: boolean
 }
 
-const Loader = ({ component: Component }: LoaderProps) => {
+const Loader = ({ component: Component, paged = false }: LoaderProps) => {
   const [loaded, setLoaded] = useState<boolean>(false)
   const [data, setData] = useState<ResumeData>()
 
@@ -42,10 +43,10 @@ const Loader = ({ component: Component }: LoaderProps) => {
     if (data) setTimeout(() => setLoaded(true), 500)
   }, [data])
 
-  // Invoke `doPreview` if the data has been loaded
+  // Invoke `doPreview` if the data has been loaded and `paged` is true
   useLayoutEffect(() => {
-    if (data && loaded) doPreview()
-  }, [data, loaded])
+    if (data && loaded && paged) doPreview()
+  }, [data, loaded, paged])
 
   // Render the resume content if the data has been loaded
   if (data && loaded) {

@@ -42,6 +42,6 @@ const CoverLetterContent = ({ data }: CoverLetterContentProps): React.ReactEleme
   )
 }
 
-const CoverLetter = (): React.ReactElement => <Loader component={CoverLetterContent} />
+const CoverLetter = (): React.ReactElement => <Loader paged component={CoverLetterContent} />
 
 export default CoverLetter
